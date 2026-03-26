@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Premium Color Palette (Action Alvarado) */
+  --color-primary-50: oklch(0.966 0.02 240);
+  --color-primary-100: oklch(0.92 0.04 240);
+  --color-primary-500: oklch(0.45 0.18 245); /* Deep Institutional Blue */
+  --color-primary-600: oklch(0.35 0.15 245);
+  
+  --color-accent-400: oklch(0.7 0.2 195); /* Vibrant Cyan/Light Blue */
+  --color-accent-500: oklch(0.65 0.25 195);
+
+  /* Semantic Colors */
+  --color-background: oklch(0.99 0 0);
+  --color-foreground: oklch(0.1 0 0);
+  --color-card: oklch(1 0 0);
+  --color-border: oklch(0.9 0 0);
+
+  /* Fonts */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-title: "Outfit", system-ui, sans-serif;
+
+  /* Effects */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: oklch(0.1 0.02 240);
+    --foreground: oklch(0.95 0.01 240);
+    --card: oklch(0.15 0.02 245);
+    --border: oklch(0.25 0.02 245);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.1 0 0);
+  --card: oklch(1 0 0);
+  --border: oklch(0.9 0 0);
+  
+  --primary: oklch(0.45 0.18 245);
+  --accent: oklch(0.7 0.2 195);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary-500/30;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-title font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 dark:bg-black/70 backdrop-blur-md border border-white/20 dark:border-white/10;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2.5 rounded-full bg-primary-500 text-white font-medium 
+           transition-all duration-300 hover:bg-primary-600 hover:scale-[1.03] 
+           active:scale-95 shadow-lg shadow-primary-500/20;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-accent-400 font-bold;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded-full border-2 border-solid border-background hover:bg-primary-500/50;
 }

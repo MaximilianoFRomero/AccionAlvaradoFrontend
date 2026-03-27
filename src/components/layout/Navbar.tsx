@@ -53,7 +53,7 @@ export const Navbar = () => {
 
 
 
-          <span className="font-title font-bold text-xl tracking-tight hidden sm:block">
+          <span className="font-title font-bold text-lg tracking-tight">
             Acción <span className="text-primary-500">Alvarado</span>
           </span>
         </Link>
@@ -96,14 +96,14 @@ export const Navbar = () => {
           ) : (
             <>
               <Link
-                href="/auth/login"
+                href="/auth/registro"
                 className="hidden sm:flex items-center gap-2 font-medium text-foreground/70 hover:text-primary-500 transition-colors"
               >
-                <LogIn size={18} />
-                Ingresar
-              </Link>
-              <Link href="/auth/registro" className="btn-primary py-2 text-sm">
+                <User size={18} />
                 Registrarse
+              </Link>
+              <Link href="/auth/login" className="btn-primary py-2 text-sm">
+                Ingresar
               </Link>
             </>
           )}
@@ -144,18 +144,18 @@ export const Navbar = () => {
           {!isAuthenticated && (
             <div className="flex flex-col gap-4">
               <Link
-                href="/auth/login"
+                href="/auth/registro"
                 onClick={() => setIsOpen(false)}
                 className="text-xl font-bold text-foreground/70"
               >
-                Ingresar
+                Registrarse
               </Link>
               <Link
-                href="/auth/registro"
+                href="/auth/login"
                 onClick={() => setIsOpen(false)}
                 className="btn-primary py-4 text-center text-lg"
               >
-                Registrarse
+                Ingresar
               </Link>
             </div>
           )}

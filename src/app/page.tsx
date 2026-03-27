@@ -19,7 +19,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-            <span className="text-sm font-medium text-foreground/70 uppercase tracking-widest text-white">Comprometidos con el vecino</span>
+            <span className="text-sm font-medium text-foreground/70 uppercase tracking-widest">Comprometidos con el vecino</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-title font-bold leading-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
@@ -68,8 +68,8 @@ export default function Home() {
             <div className={`w-14 h-14 rounded-xl ${feat.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
               <feat.icon size={28} />
             </div>
-            <h3 className="text-xl font-title font-bold mb-4 text-white">{feat.title}</h3>
-            <p className="text-foreground/60 leading-relaxed text-white">{feat.desc}</p>
+            <h3 className="text-xl font-title font-bold mb-4">{feat.title}</h3>
+            <p className="text-foreground/60 leading-relaxed">{feat.desc}</p>
           </div>
         ))}
       </section>

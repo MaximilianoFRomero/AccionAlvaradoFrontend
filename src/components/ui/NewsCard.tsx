@@ -65,20 +65,20 @@ export const NewsCard = ({
         "p-6 md:p-8 flex flex-col justify-center",
         featured ? "md:p-12" : "flex-grow"
       )}>
-        <div className="flex items-center gap-2 text-white/50 text-xs font-medium mb-4">
+        <div className="flex items-center gap-2 text-foreground/40 text-xs font-medium mb-4">
           <Calendar size={14} />
           <span>{date}</span>
         </div>
 
         <h3 className={cn(
-          "font-title font-bold leading-tight mb-4 group-hover:text-primary-500 transition-colors text-white",
+          "font-title font-bold leading-tight mb-4 group-hover:text-primary-500 transition-colors",
           featured ? "text-2xl md:text-4xl" : "text-xl"
         )}>
           {title}
         </h3>
 
         <p className={cn(
-          "text-white/70 leading-relaxed mb-6 line-clamp-3",
+          "text-foreground/60 leading-relaxed mb-6 line-clamp-3",
           featured ? "text-lg" : "text-sm"
         )}>
           {excerpt}
@@ -95,12 +95,12 @@ export const NewsCard = ({
 
 export const NewsCardSkeleton = () => (
   <div className="glass rounded-[2rem] border border-border h-[400px] animate-pulse overflow-hidden">
-    <div className="h-48 bg-white/5" />
+    <div className="h-48 bg-foreground/5" />
     <div className="p-6 space-y-4">
-      <div className="h-4 w-24 bg-white/10 rounded-full" />
-      <div className="h-8 w-full bg-white/10 rounded-full" />
-      <div className="h-4 w-full bg-white/10 rounded-full" />
-      <div className="h-4 w-2/3 bg-white/10 rounded-full" />
+      <div className="h-4 w-24 bg-foreground/5 rounded-full" />
+      <div className="h-8 w-full bg-foreground/10 rounded-full" />
+      <div className="h-4 w-full bg-foreground/5 rounded-full" />
+      <div className="h-4 w-2/3 bg-foreground/5 rounded-full" />
     </div>
   </div>
 );

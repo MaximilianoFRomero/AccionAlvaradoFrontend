@@ -143,8 +143,8 @@ export default function NoticiasPage() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 -z-10 blur-3xl transform translate-x-1/3 -translate-y-1/3" />
         
         <div className="max-w-md text-center md:text-left">
-          <h2 className="text-3xl font-title font-bold mb-4 text-white">¿Quieres recibir las novedades en tu email?</h2>
-          <p className="text-white/70 leading-relaxed mb-0">
+          <h2 className="text-3xl font-title font-bold mb-4">¿Quieres recibir las novedades en tu email?</h2>
+          <p className="text-foreground/60 leading-relaxed mb-0">
             Suscríbete a nuestro boletín semanal y no te pierdas nada de lo que sucede en Alvarado.
           </p>
         </div>

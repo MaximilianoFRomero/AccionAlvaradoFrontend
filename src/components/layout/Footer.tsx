@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Facebook, Instagram } from "@/components/ui/BrandIcons";
 
 export const Footer = () => {
   return (
@@ -46,12 +47,11 @@ export const Footer = () => {
             <li>info@accionalvarado.org</li>
             <li>General Alvarado, Buenos Aires</li>
             <li className="flex gap-4 pt-2">
-              <a href="#" className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center hover:bg-primary-500/20 transition-colors">
-                {/* Social Icon placeholder */}
-                FB
+              <a href="https://www.facebook.com/profile.php?id=61558108684911" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center hover:bg-primary-500/20 transition-colors" title="Facebook">
+                <Facebook size={18} className="text-primary-500" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center hover:bg-primary-500/20 transition-colors">
-                IG
+              <a href="https://www.instagram.com/accion_alvarado/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-500/10 flex items-center justify-center hover:bg-primary-500/20 transition-colors" title="Instagram">
+                <Instagram size={18} className="text-primary-500" />
               </a>
             </li>
           </ul>

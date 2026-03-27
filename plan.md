@@ -247,4 +247,14 @@ src/app/
 - **Actualización de Marca**: Se migró el icono de Twitter al nuevo logo de **X** en todas las secciones de redes sociales.
 
 ### 16.3. Gestión de Archivos Estáticos
-- Los recursos visuales como el favicon y las imágenes de fondo se centralizaron en la carpeta `public/` para garantizar un acceso rápido y compatible con las optimizaciones de Next.js.
+- Los recursos visuales como el favicon y las imágenes de fondo se centralizaron en la carpeta `public/` para garantizar un acceso rápido y compatible con las optimizaciones de Next.js.
+- **Limpieza de Código**: Eliminación de importaciones redundantes de `lucide-react` en componentes del dashboard para mejorar la mantenibilidad.
+
+### 16.4. Soporte para Despliegue y Demo (Vercel)
+- **Modo Mock Global**: Implementación de un interceptor de respuesta en `src/services/apiService.ts` que detecta errores de red (cuando el backend no está iniciado) y devuelve automáticamente datos de prueba (**Mock Data**). Esto permite que la web sea totalmente funcional en Vercel como demo interactiva (Noticias, Mapa, Login).
+- **Configuración de Imágenes**: Se actualizaron los `remotePatterns` en `next.config.ts` para permitir dominios externos como `images.unsplash.com` e `imgs.search.brave.com`, evitando errores de renderizado en `next/image`.
+
+### 16.5. Refinamientos de UI y Redes Sociales
+- **Navbar**: Se ajustó el comportamiento del navbar para permanecer transparente durante el scroll, eliminando el oscurecimiento automático solicitado por el diseño.
+- **Footer**: Implementación del icono oficial de **Instagram** en `BrandIcons.tsx` y vinculación de perfiles reales de Facebook e Instagram en el pie de página.
+- **Accesibilidad en Noticias**: Ajuste de contrastes en la sección de noticias, cambiando el color de títulos y extractos a blanco (`text-white`) en zonas con fondo gris o efecto `glass` para una estética más premium.

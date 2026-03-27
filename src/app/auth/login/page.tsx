@@ -126,7 +126,7 @@ export default function LoginPage() {
                 href="/auth/registro"
                 className="text-primary-500 font-bold hover:underline"
               >
-                Crea una cuenta gratis
+                Crea tu cuenta
               </Link>
             </p>
           </div>

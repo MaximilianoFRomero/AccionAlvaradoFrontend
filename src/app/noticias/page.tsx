@@ -35,7 +35,7 @@ export default function NoticiasPage() {
             excerpt: "La agrupación Acción Alvarado presentó un proyecto integral para mejorar la infraestructura vial en las zonas más postergadas de la ciudad.",
             date: "24 Mar 2026",
             category: "Propuestas",
-            imageUrl: "https://images.unsplash.com/photo-1590486803833-ffc6f08d533b?auto=format&fit=crop&q=80&w=1200",
+            imageUrl: "https://imgs.search.brave.com/kXtuaXk6aj-H8RDm_Dbhpc50361W09u8ygvrTBk0l50/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FudWVsYXMuZ292/LmFyL21lZGlhL2sy/L2l0ZW1zL2NhY2hl/LzcxNzg3YWVlY2Ew/ZGZiNTI1OTk0ZDhj/YzJmYWQ4YzgyX1hM/LmpwZw",
           },
           {
             id: "2",
@@ -51,6 +51,7 @@ export default function NoticiasPage() {
             excerpt: "Publicamos nuestro análisis detallado sobre el presupuesto del último año y proponemos mayor transparencia.",
             date: "20 Mar 2026",
             category: "Transparencia",
+            imageUrl: "https://imgs.search.brave.com/ztlPZQqqZImleCNh4LNbO4ez1U8UFSPuQCOcCOxAaUU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMC8w/Mi8yNS8wOS80NC9t/dW5pY2lwYWwtZWxl/Y3Rpb24tNDg3ODQw/NV9fMzQwLmpwZw",
           },
         ]);
       } finally {
@@ -142,8 +143,8 @@ export default function NoticiasPage() {
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 -z-10 blur-3xl transform translate-x-1/3 -translate-y-1/3" />
         
         <div className="max-w-md text-center md:text-left">
-          <h2 className="text-3xl font-title font-bold mb-4">¿Quieres recibir las novedades en tu email?</h2>
-          <p className="text-foreground/60 leading-relaxed mb-0">
+          <h2 className="text-3xl font-title font-bold mb-4 text-white">¿Quieres recibir las novedades en tu email?</h2>
+          <p className="text-white/70 leading-relaxed mb-0">
             Suscríbete a nuestro boletín semanal y no te pierdas nada de lo que sucede en Alvarado.
           </p>
         </div>

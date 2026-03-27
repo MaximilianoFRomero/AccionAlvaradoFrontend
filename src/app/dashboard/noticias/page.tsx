@@ -2,17 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { 
-  Search, 
-  Plus, 
-  Edit2, 
-  Trash2, 
-  Eye, 
-  MoreVertical,
-  Newspaper,
-  Calendar,
-  CheckCircle2
-} from "lucide-react";
-import { 
   Search as SearchIcon, 
   Plus as PlusIcon, 
   Edit2 as EditIcon, 

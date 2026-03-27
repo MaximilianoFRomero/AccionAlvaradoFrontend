@@ -6,7 +6,6 @@ import { MapPin, Plus, Filter, Info } from "lucide-react";
 import Link from "next/link";
 import { api } from "@/services/apiService";
 import { Button } from "@/components/ui/Button";
-import { ComplaintMarker } from "@/components/map/ComplaintMarker";
 
 // Dynamic import of the map component to avoid SSR issues with Leaflet
 const MapContainer = dynamic(
@@ -19,6 +18,11 @@ const MapContainer = dynamic(
       </div>
     )
   }
+);
+
+const ComplaintMarker = dynamic(
+  () => import("@/components/map/ComplaintMarker").then(mod => mod.ComplaintMarker),
+  { ssr: false }
 );
 
 interface Complaint {

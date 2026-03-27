@@ -14,7 +14,7 @@ const MOCK_DATA: Record<string, any> = {
     { id: "c1", lat: -38.2731, lng: -57.8404, description: "Bache profundo en Calle 27 e/ 24 y 22.", category: "Calles", status: "en proceso", createdAt: "24 Mar 2026" },
     { id: "c2", lat: -38.2711, lng: -57.8424, description: "Acumulación de basura fuera de hora.", category: "Basura", status: "pendiente", createdAt: "23 Mar 2026" },
     { id: "c3", lat: -38.2751, lng: -57.8444, description: "Luminaria rota calle 35 e/ 24 y 26", category: "Alumbrado", status: "resuelto", createdAt: "22 Mar 2026" },
-    { id: "c4", lat: -38.2731, lng: -57.8590, description: "Luminaria rota calle 35 e/ 24 y 26", category: "Seguridad", status: "pendiente", createdAt: "22 Mar 2026" },
+    { id: "c4", lat: -38.2731, lng: -57.8590, description: "Robos en calle 49 e/ 44 y 46", category: "Seguridad", status: "pendiente", createdAt: "22 Mar 2026" },
   ],
   "/auth/login": {
     user: { id: "u1", name: "Admin Demo", email: "admin@accion.com", role: "admin" },

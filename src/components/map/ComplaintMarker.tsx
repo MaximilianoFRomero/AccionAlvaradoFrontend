@@ -20,9 +20,9 @@ interface ComplaintMarkerProps {
 
 const getCategoryStyles = (category: string) => {
   switch (category) {
-    case "calles": return { color: "text-red-500", bg: "bg-red-500", label: "Baches / Calles" };
-    case "basura": return { color: "text-green-500", bg: "bg-green-500", label: "Basura" };
-    case "luminarias": return { color: "text-yellow-500", bg: "bg-yellow-500", label: "Alumbrado" };
+    case "Calles": return { color: "text-red-500", bg: "bg-red-500", label: "Baches / Calles" };
+    case "Basura": return { color: "text-green-500", bg: "bg-green-500", label: "Basura" };
+    case "Alumbrado": return { color: "text-yellow-500", bg: "bg-yellow-500", label: "Alumbrado" };
     default: return { color: "text-blue-500", bg: "bg-blue-500", label: "Seguridad" };
   }
 };

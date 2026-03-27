@@ -37,7 +37,7 @@ export default function MisDenunciasPage() {
         console.error("Error al cargar tus denuncias:", err);
         // Fallback Mock Data
         setComplaints([
-          { id: "1", description: "Bache profundo en Av. Colón y calle 24", category: "Calles", status: "en proceso", createdAt: "24 Mar 2026" },
+          { id: "1", description: "Bache profundo en Calle 27 e/ 24 y 22", category: "Calles", status: "en proceso", createdAt: "24 Mar 2026" },
           { id: "2", description: "Falta de iluminación en la plaza del barrio sur", category: "Luminarias", status: "pendiente", createdAt: "20 Mar 2026" },
           { id: "3", description: "Cables caídos tras la tormenta", category: "Seguridad", status: "resuelto", createdAt: "15 Mar 2026" },
         ]);

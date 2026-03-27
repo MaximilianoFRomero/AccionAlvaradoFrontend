@@ -11,9 +11,10 @@ const MOCK_DATA: Record<string, any> = {
     { id: "3", title: "Informe: El estado de las cuentas municipales", excerpt: "Publicamos nuestro análisis detallado sobre el presupuesto del último año...", date: "20 Mar 2026", category: "Transparencia", status: "borrador", imageUrl: "https://imgs.search.brave.com/ztlPZQqqZImleCNh4LNbO4ez1U8UFSPuQCOcCOxAaUU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMC8w/Mi8yNS8wOS80NC9t/dW5pY2lwYWwtZWxl/Y3Rpb24tNDg3ODQw/NV9fMzQwLmpwZw" },
   ],
   "/complaints": [
-    { id: "c1", lat: -38.2731, lng: -57.8404, description: "Bache profundo en Av. Colón y calle 24.", category: "Calles", status: "en proceso", createdAt: "24 Mar 2026" },
+    { id: "c1", lat: -38.2731, lng: -57.8404, description: "Bache profundo en Calle 27 e/ 24 y 22.", category: "Calles", status: "en proceso", createdAt: "24 Mar 2026" },
     { id: "c2", lat: -38.2711, lng: -57.8424, description: "Acumulación de basura fuera de hora.", category: "Basura", status: "pendiente", createdAt: "23 Mar 2026" },
-    { id: "c3", lat: -38.2751, lng: -57.8444, description: "Luminaria rota frente a escuela técnica.", category: "Alumbrado", status: "resuelto", createdAt: "22 Mar 2026" },
+    { id: "c3", lat: -38.2751, lng: -57.8444, description: "Luminaria rota calle 35 e/ 24 y 26", category: "Alumbrado", status: "resuelto", createdAt: "22 Mar 2026" },
+    { id: "c4", lat: -38.2731, lng: -57.8590, description: "Luminaria rota calle 35 e/ 24 y 26", category: "Seguridad", status: "pendiente", createdAt: "22 Mar 2026" },
   ],
   "/auth/login": {
     user: { id: "u1", name: "Admin Demo", email: "admin@accion.com", role: "admin" },

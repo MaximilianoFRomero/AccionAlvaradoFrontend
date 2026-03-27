@@ -47,14 +47,14 @@ export default function DenunciaDetailPage() {
         // Fallback Mock Data
         setComplaint({
           id: id as string,
-          description: "Bache profundo en Av. Colón y calle 24. El pozo afecta a dos carriles y ha causado daños en vehículos durante la última semana.",
+          description: "Bache profundo en Calle 27 e/ 24 y 22. El pozo ha causado daños en vehículos durante la última semana.",
           category: "Calles",
           status: "en proceso",
           createdAt: "24 Mar 2026",
           lat: -38.2731,
           lng: -57.8404,
           userName: "Juan Pérez",
-          imageUrl: "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=1200",
+          imageUrl: "https://infovallefertil.com/download/multimedia.grande.9c658c5ebd50145b.32303232303432345f3135343530305f6772616e64652e6a7067.jpg",
         });
       } finally {
         setIsLoading(false);

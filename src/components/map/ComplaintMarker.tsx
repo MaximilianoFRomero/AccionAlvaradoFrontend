@@ -28,6 +28,8 @@ const getCategoryStyles = (category: string) => {
 };
 
 export const ComplaintMarker = ({ complaint }: ComplaintMarkerProps) => {
+  if (typeof window === "undefined") return null;
+
   const style = getCategoryStyles(complaint.category);
 
   // Custom DivIcon for premium feel

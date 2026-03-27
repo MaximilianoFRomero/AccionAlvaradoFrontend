@@ -19,16 +19,16 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-            <span className="text-sm font-medium text-foreground/70 uppercase tracking-widest text-white">Comprometidos con el cambio</span>
+            <span className="text-sm font-medium text-foreground/70 uppercase tracking-widest text-white">Comprometidos con el vecino</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-title font-bold leading-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
             Hacia un General Alvarado <br />
-            <span className="gradient-text">Más Justo y Moderno</span>
+            <span className="gradient-text">Más Desarrollado y Moderno</span>
           </h1>
           
           <p className="text-xl text-foreground/60 max-w-2xl mx-auto mb-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-400">
-            Únete a la agrupación vecinal que escucha a sus vecinos. Reporta problemas, mantente informado y participa en la construcción de nuestro futuro.
+            La siguiente web es a modo de demostración, se siguen realizando los trabajos de desarrollo, aceptamos cualquier sugerencia, para ello contacte con el sector de desarrollo.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
@@ -68,8 +68,8 @@ export default function Home() {
             <div className={`w-14 h-14 rounded-xl ${feat.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
               <feat.icon size={28} />
             </div>
-            <h3 className="text-xl font-title font-bold mb-4">{feat.title}</h3>
-            <p className="text-foreground/60 leading-relaxed">{feat.desc}</p>
+            <h3 className="text-xl font-title font-bold mb-4 text-white">{feat.title}</h3>
+            <p className="text-foreground/60 leading-relaxed text-white">{feat.desc}</p>
           </div>
         ))}
       </section>
@@ -83,7 +83,7 @@ export default function Home() {
             Regístrate hoy mismo para empezar a reportar y seguir el estado de tus denuncias en tiempo real.
           </p>
           <Link href="/auth/registro" className="btn-primary py-4 px-10 text-lg">
-            Crear mi Cuenta Gratis
+            Crea tu Cuenta
           </Link>
         </div>
       </section>

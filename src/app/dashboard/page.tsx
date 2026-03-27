@@ -8,7 +8,8 @@ import {
   TrendingUp, 
   AlertCircle,
   MoreVertical,
-  Plus
+  Plus,
+  ChevronRight
 } from "lucide-react";
 import Link from "next/link";
 import { useAuthStore } from "@/store/authStore";

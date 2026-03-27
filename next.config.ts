@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'infovallefertil.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'www.canela.gov.ar',
       },
     ],
